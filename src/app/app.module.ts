@@ -13,6 +13,9 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { CategoriesPipe } from './categories.pipe';
 import { FundingFormComponent } from './funding-form/funding-form.component';
+import { AdminComponent } from './admin/admin.component';
+import { EditProjectComponent } from './edit-project/edit-project.component';
+import { NewProjectComponent } from './new-project/new-project.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +32,10 @@ export const firebaseConfig = {
     ProjectListComponent,
     ProjectDetailComponent,
     CategoriesPipe,
-    FundingFormComponent
+    FundingFormComponent,
+    AdminComponent,
+    EditProjectComponent,
+    NewProjectComponent
   ],
   imports: [
     BrowserModule,

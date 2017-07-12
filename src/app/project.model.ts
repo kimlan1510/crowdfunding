@@ -1,6 +1,6 @@
 export class Project {
   public active: boolean = true;
 
-  constructor (public name: string, public starters: string, public description: string, public goalAmount: number, public amountRaised: number, public backers: string[], public plan: string, public rewards: string, public categories: string) { }
+  constructor (public name: string, public starters: string, public description: string, public goalAmount: number, public amountRaised: number=0, public backers: string[]=null, public plan: string, public rewards: string, public categories: string) { }
 
 }

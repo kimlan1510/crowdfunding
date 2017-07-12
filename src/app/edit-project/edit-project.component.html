@@ -1,0 +1,38 @@
+<button (click)="showEditProjectForm()" *ngIf="editProjectButton">Edit this Project</button>
+
+
+<div *ngIf="editProjectForm">
+  <h4>Edit Project</h4>
+  <label>Project Name:</label>
+  <input [(ngModel)]="selectedProject.name">
+  <br>
+
+  <label>Project Starters:</label>
+  <input [(ngModel)]="selectedProject.starters">
+  <br>
+
+  <label>Project Goal Amount:</label>
+  <input [(ngModel)]="selectedProject.goalAmount">
+  <br>
+
+  <label>Project Description:</label>
+  <textarea [(ngModel)]="selectedProject.description"></textarea>
+  <br>
+
+  <label>Project Categories:</label>
+  <input [(ngModel)]="selectedProject.categories">
+  <br>
+
+  <label>Project Plan:</label>
+  <textarea [(ngModel)]="selectedProject.plan"></textarea>
+  <br>
+
+  <label>Project Rewards:</label>
+  <textarea [(ngModel)]="selectedProject.rewards"></textarea>
+  <br>
+
+
+  <button (click)="beginUpdatingProject(selectedProject)" (click)="hideEditProjectForm()">Update</button>
+  <hr>
+  <button (click)="beginDeletingProject(selectedProject)">Delete</button>
+</div>

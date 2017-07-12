@@ -30,4 +30,20 @@ export class ProjectService {
      });
    }
 
+   updateProject(localUpdatedProject){
+    var projectEntryInFirebase = this.getProjectById(localUpdatedProject.$key);
+    projectEntryInFirebase.update({name: localUpdatedProject.name,
+                                starters: localUpdatedProject.starters,
+                                goalAmount: localUpdatedProject.goalAmount,
+                                description: localUpdatedProject.description,
+                                categories: localUpdatedProject.categories,
+                                plan: localUpdatedProject.plan,
+                                rewards: localUpdatedProject.rewards});
+  }
+
+  deleteProject(localProjectToDelete){
+    var projectEntryInFirebase = this.getProjectById(localProjectToDelete.$key);
+    projectEntryInFirebase.remove();
+  }
+
 }

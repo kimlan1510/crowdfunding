@@ -1,0 +1,31 @@
+<h3>Create New Project</h3>
+<div>
+  <div>
+    <label>Project Name:</label>
+    <input #newName>
+    <br>
+    <label>Project Starters (Names):</label>
+    <input #newStarters>
+    <br>
+    <label>Project Description:</label>
+    <textarea #newDescription></textarea>
+    <br>
+    <label>Goal Amount ($USD):</label>
+    <input #newGoalAmount type="number">
+    <br>
+    <label>Project Category:</label>
+    <select #newCategories>
+      <option value="Games">Games</option>
+      <option value="Technology">Technology</option>
+      <option value="Food">Food</option>
+    </select>
+    <br>
+    <label>Project Plan:</label>
+    <textarea #newPlan></textarea>
+    <br>
+    <label>Project Reward Levels:</label>
+    <textarea #newRewards></textarea>
+    <br>
+  </div>
+  <button (click)="submitForm(newName.value, newStarters.value, newDescription.value, newGoalAmount.value, newPlan.value, newRewards.value, newCategories.value)" routerLink="/projects">Add</button>
+</div>
