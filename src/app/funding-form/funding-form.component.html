@@ -1,0 +1,18 @@
+<button (click)="fundMe()" *ngIf="fundMeButton">Fund Me</button>
+
+<div *ngIf="fundMeForm">
+  <h3>Donate to this project</h3>
+  <div>
+    <label>Your Name:</label>
+    <br>
+    <input #newName>
+  </div>
+
+  <div>
+    <label>Amount to Donate:</label>
+    <br>
+    <input #newAmount>
+  </div>
+
+  <button (click)="submitFundingForm(newName.value, newAmount.value)">DONATE</button>
+</div>

@@ -1,12 +1,13 @@
 <div>
-  <h2>{{(projectToDisplay | async)?.name}}</h2>
-  <h3>{{(projectToDisplay | async)?.starters}}</h3>
-  <p>{{(projectToDisplay | async)?.description}}</p>
-  <p>{{(projectToDisplay | async)?.goalAmount}}</p>
-  <p>{{(projectToDisplay | async)?.amountRaised}}</p>
-  <p>{{(projectToDisplay | async)?.plan}}</p>
-  <p>{{(projectToDisplay | async)?.rewards}}</p>
-  <p>{{(projectToDisplay | async)?.amountRaised}}</p>
+  <h2>{{projectToDisplay?.name}}</h2>
+  <h3>{{projectToDisplay?.starters}}</h3>
+  <p>{{projectToDisplay?.description}}</p>
+  <p>Needed: $ {{projectToDisplay?.goalAmount}}</p>
+  <p>Current Amount: $ {{projectToDisplay?.amountRaised}}</p>
+  <p>Backers: {{projectToDisplay?.backers}}</p>
+  <p>{{projectToDisplay?.plan}}</p>
+  <p>{{projectToDisplay?.rewards}}</p>
 
 
+<app-funding-form [selectedProject]="projectToDisplay"></app-funding-form>
 </div>

@@ -4,7 +4,7 @@
   "description": "Spin tales from the top secret world of cats! A family-friendly party game for 3-6 humans. Made with 100% crowd-sourced cat pics!",
   "goalAmount": 12500,
   "amountRaised": 1232,
-  "backers": 278,
+  "backers": ["Jane Doe", "James Bond", "Alyssa", "KimLan"],
   "plan": "The money raised will go towards helping us manufacture and print and deliver the game.",
   "rewards": "A pledge of $17 or more: A copy of Action Cats! Game and a chance to have your cat on a card!",
   "categories": "Games"
@@ -15,7 +15,7 @@
     "description": "A sweet and savory bacon infused food truck. Inspired by fresh local, seasonal, and foraged ingredients. Heavily community influenced.",
     "goalAmount": 27000,
     "amountRaised": 28345,
-    "backers": 1001,
+    "backers": ["Jane Doe", "James Bond", "Alyssa", "KimLan"],
     "plan": "All money donated will go toward a food truck, equipping its interior and exterior to meet most (if not all) of its needs and food supply costs for the first three months.",
     "rewards": "Pledge $15 or more: A free menu item from the truck. Then I can personally thank you for your donation and support. You'll receive an electronic i-owe-you through the email you use to donate. Pledge $100 or more: An 8 oz jar of Bacon Jam! A Bakin' Bakery Beverage Caddy and a Bacon themed tote.",
     "categories": "Food"
@@ -26,7 +26,7 @@
     "description": "Amabrush is the world's first, fully automatic toothbrush. This patent pending device brushes all your teeth at once, fully automatic, and finishes in just ten seconds. All you have to do is press a single button, wait ten seconds, and you’ll have perfectly clean teeth!",
     "goalAmount": 57403,
     "amountRaised": 1184203,
-    "backers": 8959,
+    "backers": ["Jane Doe", "James Bond", "Alyssa", "KimLan"],
     "plan": "All money donated will support high upfront expenses regarding tooling, certification and minimum quantity purchases.",
     "rewards": "Pledge €79 or more and receive a basic version (Kickstarter special) of Amabrush.",
     "categories": "Technology"

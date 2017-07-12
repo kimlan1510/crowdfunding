@@ -22,4 +22,12 @@ export class ProjectService {
      return this.database.object('/projects/' + projectId);
    }
 
+   donateToProject(selectedProject){
+     var projectInFirebase = this.getProjectById(selectedProject.$key);
+     projectInFirebase.update({
+       amountRaised: selectedProject.amountRaised,
+       backers: selectedProject.backers
+     });
+   }
+
 }

@@ -11,6 +11,7 @@ import { ProjectService} from '../project.service';
   providers: [ProjectService]
 })
 export class ProjectDetailComponent implements OnInit {
+
   projectId: string;
   projectToDisplay;
 
@@ -20,7 +21,12 @@ export class ProjectDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) =>{
       this.projectId = urlParameters['id'];
     });
-    this.projectToDisplay = this.projectService.getProjectById(this.projectId);
+    this.projectService.getProjectById(this.projectId).subscribe(dataLastEmittedFromObserver =>{
+    this.projectToDisplay = dataLastEmittedFromObserver;
+    })
+
   }
+
+
 
 }

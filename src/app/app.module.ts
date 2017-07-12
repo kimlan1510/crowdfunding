@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { CategoriesPipe } from './categories.pipe';
+import { FundingFormComponent } from './funding-form/funding-form.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     AboutComponent,
     ProjectListComponent,
     ProjectDetailComponent,
-    CategoriesPipe
+    CategoriesPipe,
+    FundingFormComponent
   ],
   imports: [
     BrowserModule,
