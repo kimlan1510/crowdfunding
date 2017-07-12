@@ -1,0 +1,13 @@
+<h2>All Projects</h2>
+<select (change)="onChange($event.target.value)">
+    <option value="All">View All Categories</option>
+    <option value="Games">Games</option>
+    <option value="Food">Food</option>
+    <option value="Technology">Technology</option>
+</select>
+
+<div *ngFor="let project of projects | async | categories: filterByCategories " class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(project)">{{project.name}}</h3>
+  </div>
+</div>
