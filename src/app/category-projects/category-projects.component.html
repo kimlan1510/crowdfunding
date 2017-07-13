@@ -1,0 +1,11 @@
+<div class="panel-section">
+  <div *ngFor="let project of output" class="panel panel-default">
+    <div class="panel-body">
+      <div (click)="goToDetailPage(project)">
+        <img src="../assets/img/bacon.png" alt="picture"/>
+        <h3>{{project.name}}</h3>
+        <p>{{project.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>

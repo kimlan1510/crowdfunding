@@ -1,0 +1,6 @@
+
+<ul *ngFor="let category of categories"  >
+  <li (click)="goToCategoryPage(category.display)"><h3>{{category.display}}</h3></li>
+
+  <!-- <app-category-projects [selectedCategory]="category.display"></app-category-projects> -->
+</ul>

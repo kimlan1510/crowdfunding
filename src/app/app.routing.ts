@@ -6,6 +6,8 @@ import { ProjectListComponent } from './project-list/project-list.component';
 import { ProjectDetailComponent} from './project-detail/project-detail.component';
 import { AdminComponent }   from './admin/admin.component';
 import { NewProjectComponent }   from './new-project/new-project.component';
+import { CategoriesListComponent } from './categories-list/categories-list.component';
+import { CategoryProjectsComponent } from './category-projects/category-projects.component';
 
 const appRoutes: Routes = [
   {
@@ -31,6 +33,14 @@ const appRoutes: Routes = [
   {
     path: 'new-project',
     component: NewProjectComponent
+  },
+  {
+    path: 'explore',
+    component: CategoriesListComponent
+  },
+  {
+    path: 'explore/:category',
+    component: CategoryProjectsComponent
   }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

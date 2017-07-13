@@ -10,8 +10,8 @@ import { ProjectService} from '../project.service';
   styleUrls: ['./project-detail.component.css'],
   providers: [ProjectService]
 })
-export class ProjectDetailComponent implements OnInit {
 
+export class ProjectDetailComponent implements OnInit {
   projectId: string;
   projectToDisplay;
 
