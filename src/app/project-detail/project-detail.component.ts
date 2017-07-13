@@ -20,16 +20,13 @@ export class ProjectDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((urlParameters) =>{
       this.projectId = urlParameters['id'];
-      console.log(this.projectService.getProjectById(this.projectId));
-
     });
+
     this.projectService.getProjectById(this.projectId).subscribe(dataLastEmittedFromObserver => {
       this.projectToDisplay = dataLastEmittedFromObserver;
-      console.log(this.projectToDisplay);
       if (this.projectToDisplay.amountRaised > this.projectToDisplay.goalAmount) {
         this.projectToDisplay.active = false;
         this.projectService.markCompleted(this.projectToDisplay);
-        console.log(this.projectToDisplay.active);
       }
     })
   }
