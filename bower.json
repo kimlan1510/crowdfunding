@@ -3,7 +3,7 @@
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/moodyan/ANG-crowdfunding",
   "ignore": [
     "**/.*",
     "node_modules",

@@ -4,30 +4,41 @@
 <div *ngIf="editProjectForm">
   <h4>Edit Project</h4>
   <label>Project Name:</label>
+  <br>
   <input [(ngModel)]="selectedProject.name">
   <br>
 
   <label>Project Starters:</label>
+  <br>
   <input [(ngModel)]="selectedProject.starters">
   <br>
 
   <label>Project Goal Amount:</label>
+  <br>
   <input [(ngModel)]="selectedProject.goalAmount">
   <br>
 
+  <label>Project Categories:</label>
+  <br>
+  <select [(ngModel)]="selectedProject.categories">
+    <option value="Games">Games</option>
+    <option value="Technology">Technology</option>
+    <option value="Food">Food</option>
+  </select>
+  <br>
+
   <label>Project Description:</label>
+  <br>
   <textarea [(ngModel)]="selectedProject.description"></textarea>
   <br>
 
-  <label>Project Categories:</label>
-  <input [(ngModel)]="selectedProject.categories">
-  <br>
-
   <label>Project Plan:</label>
+  <br>
   <textarea [(ngModel)]="selectedProject.plan"></textarea>
   <br>
 
   <label>Project Rewards:</label>
+  <br>
   <textarea [(ngModel)]="selectedProject.rewards"></textarea>
   <br>
 

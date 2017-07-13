@@ -1,17 +1,25 @@
-<h2>All Projects</h2>
-<select (change)="onChange($event.target.value)">
-    <option value="All">View All Categories</option>
-    <option value="Games">Games</option>
-    <option value="Food">Food</option>
-    <option value="Technology">Technology</option>
-</select>
-
-<div *ngFor="let project of projects | async | categories: filterByCategories " class="panel panel-default">
-  <div class="panel-body">
-    <h3 (click)="goToDetailPage(project)">{{project.name}}</h3>
-    <p>{{project.description}}</p>
-    <div *ngIf="currentRoute === '/admin'">
-      <app-edit-project [selectedProject]="project"></app-edit-project>
+<div class="heading-style">
+  <h2>P R O J E C T S</h2>
+  <select (change)="onChange($event.target.value)">
+      <option value="All">View All Categories</option>
+      <option value="Games">Games</option>
+      <option value="Food">Food</option>
+      <option value="Technology">Technology</option>
+  </select>
+</div>
+  <br>
+  <br>
+  <div class="panel-section">
+    <div *ngFor="let project of projects | async | categories: filterByCategories " class="panel panel-default">
+      <div class="panel-body">
+        <div (click)="goToDetailPage(project)">
+          <img src="../assets/img/bacon.png" alt="picture"/>
+          <h3>{{project.name}}</h3>
+          <p>{{project.description}}</p>
+        </div>
+        <div *ngIf="currentRoute === '/admin'">
+          <app-edit-project [selectedProject]="project"></app-edit-project>
+        </div>
+      </div>
     </div>
   </div>
-</div>
